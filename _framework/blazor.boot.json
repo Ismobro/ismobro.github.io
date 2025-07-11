@@ -1,10 +1,10 @@
 {
   "mainAssemblyName": "FocusNest",
   "resources": {
-    "hash": "sha256-iYJ9R5btQpuu8ko3R4Bszlqv6bTVVCbpDpt457prtjU=",
+    "hash": "sha256-M3STIML7msXnGFia9x1JXRJPgey7plELoCoKOlZecyA=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
-      "Microsoft.AspNetCore.Components.nrb4nrxr0u.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.t3wwwsvm0u.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Forms.y2kmnnid3e.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.Web.7ivzanv953.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.615skuxmvs.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -47,7 +47,7 @@
       "System.Threading.zcb42vnja5.wasm": "System.Threading.wasm",
       "System.cunp5qiwjj.wasm": "System.wasm",
       "System.Private.CoreLib.oir5ur2mhp.wasm": "System.Private.CoreLib.wasm",
-      "FocusNest.48klghe1uz.wasm": "FocusNest.wasm",
+      "FocusNest.01lgskeana.wasm": "FocusNest.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
       "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
@@ -76,7 +76,7 @@
     },
     "assembly": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "Microsoft.AspNetCore.Components.nrb4nrxr0u.wasm": "sha256-bVimhSvCpyzScfgBLGYjJ3QU6gnpr6QeXeqpYEsfPc8=",
+      "Microsoft.AspNetCore.Components.t3wwwsvm0u.wasm": "sha256-dxXmyyMEQ2Du66+qHxfZLdTavU46IaOArQbcC9BsaIg=",
       "Microsoft.AspNetCore.Components.Forms.y2kmnnid3e.wasm": "sha256-KqKVbl8Mt4dwK+YTxdAtj28GFuvls3PCgmEfAzIN4eU=",
       "Microsoft.AspNetCore.Components.Web.7ivzanv953.wasm": "sha256-wT896BMgB6z37sf9PObyxVAuA6FO0IHbYk32b4Rl84A=",
       "Microsoft.AspNetCore.Components.WebAssembly.615skuxmvs.wasm": "sha256-emRN3lp6pyAQiza+BhM5+WtNZKLHizh8b6Ogkazmigg=",
@@ -117,7 +117,7 @@
       "System.Text.RegularExpressions.gg2rht6ti5.wasm": "sha256-MCqZWZktBLRYHrIEuJg7+Yp1C/VprA7fUbhvxycCWvQ=",
       "System.Threading.zcb42vnja5.wasm": "sha256-fZ9o2IQTIELEttSIeZ1yev0uL+0qIYnwOC1p/5RM/0k=",
       "System.cunp5qiwjj.wasm": "sha256-DM5iEENhrifGKn33Y7cqRzxC0OtHXYOKO13icwIazj8=",
-      "FocusNest.48klghe1uz.wasm": "sha256-XJKmiD4nORzw1ycJXNjrm2znF29OlaDaWHzbNCnYXe4="
+      "FocusNest.01lgskeana.wasm": "sha256-jGURy33xyyeiXdrAmiBnw0AJYpq115oKmQorE9bpfbk="
     }
   },
   "cacheBootResources": true,
