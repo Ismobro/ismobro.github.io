@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FocusNest",
   "resources": {
-    "hash": "sha256-M3STIML7msXnGFia9x1JXRJPgey7plELoCoKOlZecyA=",
+    "hash": "sha256-Ihw2mKSUBFO9VVBh6z16O3+LGc2F3oaPdjT2yW717po=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Microsoft.AspNetCore.Components.t3wwwsvm0u.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -47,7 +47,7 @@
       "System.Threading.zcb42vnja5.wasm": "System.Threading.wasm",
       "System.cunp5qiwjj.wasm": "System.wasm",
       "System.Private.CoreLib.oir5ur2mhp.wasm": "System.Private.CoreLib.wasm",
-      "FocusNest.01lgskeana.wasm": "FocusNest.wasm",
+      "FocusNest.m71eh3oi3p.wasm": "FocusNest.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
       "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
@@ -117,7 +117,7 @@
       "System.Text.RegularExpressions.gg2rht6ti5.wasm": "sha256-MCqZWZktBLRYHrIEuJg7+Yp1C/VprA7fUbhvxycCWvQ=",
       "System.Threading.zcb42vnja5.wasm": "sha256-fZ9o2IQTIELEttSIeZ1yev0uL+0qIYnwOC1p/5RM/0k=",
       "System.cunp5qiwjj.wasm": "sha256-DM5iEENhrifGKn33Y7cqRzxC0OtHXYOKO13icwIazj8=",
-      "FocusNest.01lgskeana.wasm": "sha256-jGURy33xyyeiXdrAmiBnw0AJYpq115oKmQorE9bpfbk="
+      "FocusNest.m71eh3oi3p.wasm": "sha256-opp+9tRbMal5zi2kXeLhvLL0NDzxmLB6LjMHP4+Pkh0="
     }
   },
   "cacheBootResources": true,
