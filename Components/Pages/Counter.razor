@@ -1,0 +1,55 @@
+﻿@page "/counter"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+<PageTitle>Counter</PageTitle>
+
+
+
+<h1>My Notepad</h1>
+<h4>Braindump things you might forget!</h4>
+<div class="d-flex justify-content-center">
+    <div style="width: 80%;">
+        <textarea class="form-control"
+                  style="min-height: 400px"
+                  @oninput="HandleInput"
+                  value="@notepadText" />
+    </div>
+</div>
+
+
+
+<p>Characters: @notepadText.Length</p>
+
+@code {
+    private string notepadText = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var saved = await localStorage.GetItemAsync<string>("notepad-text");
+
+        if (!string.IsNullOrEmpty(saved))
+        {
+            notepadText = saved;
+        }
+
+
+    }
+
+    private async Task HandleInput(ChangeEventArgs e)
+    {
+        //this is an advanced way:notepadText = e.Value?.ToString() ?? "";
+        if (e.Value != null)
+        {
+            notepadText = e.Value.ToString();
+        }
+        else
+        {
+            notepadText = "";
+        }
+//this is the normal way
+        await localStorage.SetItemAsync("notepad-text", notepadText);
+    }
+
+
+}
+

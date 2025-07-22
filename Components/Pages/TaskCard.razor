@@ -1,0 +1,34 @@
+﻿
+@code {
+    [Parameter] public required TaskItem task { get; set; }
+    [Parameter] public EventCallback<TaskItem> OnCompleted { get; set; }
+
+    void HandleChecked()
+    {
+            OnCompleted.InvokeAsync(task); // tell parent to remove me
+            StateHasChanged();
+    }
+
+}
+
+<div class="card p-3 mb-3">
+    <h3 class="text-success">@task.Title</h3>
+    <p>@task.Description</p>
+    <p><small>Focus Requirement: @task.FocusLevel</small></p>
+    <p>
+        <input type="checkbox" @bind="task.IsDone"/>
+
+        Done
+    </p>
+    <button class="btn btn-completed" @onclick="HandleChecked">Remove Task</button>
+
+    @if (task.Subtasks?.Count > 0)
+    {
+        <ul>
+            @foreach (var sub in task.Subtasks)
+            {
+                <li>@sub</li>
+            }
+        </ul>
+    }
+</div>

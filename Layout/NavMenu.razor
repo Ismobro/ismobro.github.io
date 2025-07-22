@@ -1,0 +1,116 @@
+﻿<style>
+    p {
+        color: white;
+    }  
+</style>
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">FocusNest</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Notepad
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link text-white" href="QuickAdd">
+                <img src="icons/list-task.svg" alt="Tasks icon" width="20" class="me-2 align-middle custom-icon" />
+                Tasks
+            </NavLink>
+        </div>
+
+        <!-- Toggle Timer Button -->
+        <div class="nav-item mt-3 d-flex justify-content-center">
+            <button class="btn btn-completed" @onclick="ToggleTimer">
+                @(showTimer ? "Hide Timer" : "Show Timer")
+            </button>
+        </div>
+
+
+        <!-- Timer UI -->
+        @if (showTimer)
+        {
+            <div class="d-flex flex-column align-items-center mt-3">
+                <p class="fs-4">@($"{hours:D2}:{minutes:D2}:{seconds:D2}")</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-completed" @onclick="StartTimer">Start</button>
+                    <button class="btn btn-completed" @onclick="StopTimer">Stop</button>
+                    <button class="btn btn-completed" @onclick="ResetTimer">Reset</button>
+                </div>
+            </div>
+        }
+
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    // Toggle for showing/hiding the timer
+    private bool showTimer = false;
+    private void ToggleTimer()
+    {
+        showTimer = !showTimer;
+    }
+
+    int totalSeconds = 0;
+    int hours = 0;
+    int minutes = 0;
+    int seconds = 0;
+
+    private bool IsRunning = false;
+    private CancellationTokenSource? source;
+
+    async Task StartTimer()
+    {
+        if (!IsRunning)
+        {
+            source = new CancellationTokenSource();
+            var token = source.Token;
+            IsRunning = true;
+
+            while (!token.IsCancellationRequested)
+            {
+                await Task.Delay(1000, token);
+                totalSeconds++;
+                hours = totalSeconds / 3600;
+                minutes = (totalSeconds % 3600) / 60;
+                seconds = totalSeconds % 60;
+                InvokeAsync(StateHasChanged);
+            }
+        }
+    }
+
+    private void StopTimer()
+    {
+        source?.Cancel();
+        IsRunning = false;
+    }
+
+    private void ResetTimer()
+    {
+        StopTimer();
+        totalSeconds = 0;
+        hours = minutes = seconds = 0;
+        StateHasChanged();
+    }
+}

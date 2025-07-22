@@ -1,0 +1,109 @@
+﻿@page "/QuickAdd"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+
+
+<h1>Tasks</h1>
+<h3>Add a task!</h3>
+
+<div class="card p-3 mt-4 mb-3 bg-light shadow-sm">
+<button class = "btn btn-secondary" @onclick="AddTodo">Add todo</button>
+</div>
+
+
+@code {
+
+    private List<TaskItem> todos = new();
+
+    bool showform = false;
+    private TaskItem newTask = new TaskItem { Title = "", Description = "" };
+
+
+    void AddTodo()
+    {
+        showform = !showform;
+        if (showform)
+        {
+            newTask = new TaskItem { Title = "", Description = "" };
+        }
+    }
+
+    private async Task SubmitTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask.Title))
+        {
+            todos.Add(newTask);
+            showform = false;
+            await localStorage.SetItemAsync("focusnest_todos", todos);
+            StateHasChanged();
+        }
+    }
+
+    private async Task RemoveTask(TaskItem taskToRemove)
+    {
+        todos.Remove(taskToRemove);
+        await localStorage.SetItemAsync("focusnest_todos", todos);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var saved = await localStorage.GetItemAsync<List<TaskItem>>("focusnest_todos");
+        if (saved != null)
+        {
+            todos = saved;
+        }
+        else
+        {
+            todos = new();
+        }
+
+    }
+
+
+   //known errors: lots. goddamn.
+
+}
+@if (showform)
+{
+    <div class="card p-3 mb-3 bg-light shadow-sm">
+        <div class="mb-3">
+            <label for="titleInput" class="form-label">Title</label>
+            <input id="titleInput" class="form-control" @bind="newTask.Title" placeholder="Title (required)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="descInput" class="form-label">Description</label>
+            <input id="descInput" class="form-control" @bind="newTask.Description" placeholder="Description (required)" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Focus Requirement</label>
+            <InputRadioGroup @bind-Value="newTask.FocusLevel">
+                <div class="form-check">
+                    <InputRadio Value="TaskItem.FocusLevels.Low" class="form-check-input" />
+                    <label class="form-check-label">Low</label>
+                </div>
+                <div class="form-check">
+                    <InputRadio Value="TaskItem.FocusLevels.Medium" class="form-check-input" />
+                    <label class="form-check-label">Medium</label>
+                </div>
+                <div class="form-check">
+                    <InputRadio Value="TaskItem.FocusLevels.High" class="form-check-input" />
+                    <label class="form-check-label">High</label>
+                </div>
+            </InputRadioGroup>
+        </div>
+
+        <button class="btn btn-primary" @onclick="SubmitTask">Submit</button>
+    </div>
+
+}
+
+@foreach (var task in todos)
+{
+    <TaskCard Task="task" OnCompleted="RemoveTask" />
+}
+
+
+
+
+
