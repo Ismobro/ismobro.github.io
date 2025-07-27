@@ -139,9 +139,78 @@ p {
     line-height: 1.5;
 }
 
+.btn-completed {
+    color: #fff;
+    background-color: blueviolet;
+    border-color: #1861ac;
+}
+
+    .btn-completed:hover {
+        color: #fff;
+        background-color: #7321c1;
+        border-color: #17161ac;
+    }
 
 
+.timer-box {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* semi-transparent glassy */
+    backdrop-filter: blur(6px); /* frosted glass effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    color: white;
+}
 
+.btn-timer {
+    background-color: #8e44ad; /* a nice purple */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+    .btn-timer:hover {
+        background-color: #732d91;
+    }
+
+.timer-box-sidebar {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    max-width: 100%; 
+    color: white;
+}
+
+.stopwatch-toggle {
+    padding: 0.5rem 1rem;
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+}
+
+    .stopwatch-toggle:hover,
+    .stopwatch-toggle:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        outline: none;
+        text-align: left;
+        display: block;
+    }
 
 
 
