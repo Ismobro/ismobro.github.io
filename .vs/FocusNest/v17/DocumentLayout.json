@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\components\\pages\\pomodorotimer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:components\\pages\\pomodorotimer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\components\\pages\\quickadd.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:components\\pages\\quickadd.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\components\\pages\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:components\\pages\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|c:\\users\\ismae\\documents\\ismobro.github.io\\components\\pages\\taskcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{140F54C0-1FFF-39F6-123D-92B8BF00C510}|FocusNest.csproj|solutionrelative:components\\pages\\taskcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PomodoroTimer.razor",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\PomodoroTimer.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\PomodoroTimer.razor",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\PomodoroTimer.razor",
+              "RelativeToolTip": "Components\\Pages\\PomodoroTimer.razor",
+              "ViewState": "AgIAACAAAAAAAAAAAAAzwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-27T00:27:18.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-26T18:36:33.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuickAdd.razor",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\QuickAdd.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\QuickAdd.razor",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\QuickAdd.razor",
+              "RelativeToolTip": "Components\\Pages\\QuickAdd.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-26T18:33:31.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Components\\Pages\\Models\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\Models\\TaskItem.cs",
+              "RelativeToolTip": "Components\\Pages\\Models\\TaskItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T18:31:54.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAHgAAAAAAAAAAAA3wK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-26T18:22:05.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Layout\\NavMenu.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-26T18:07:59.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskCard.razor",
+              "DocumentMoniker": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\TaskCard.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\TaskCard.razor",
+              "ToolTip": "C:\\Users\\ismae\\Documents\\ismobro.github.io\\Components\\Pages\\TaskCard.razor",
+              "RelativeToolTip": "Components\\Pages\\TaskCard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T01:04:18.33Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

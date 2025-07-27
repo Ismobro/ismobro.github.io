@@ -1,4 +1,6 @@
-﻿<style>
+﻿@using FocusNest.Components.Pages
+
+<style>
     p {
         color: white;
     }  
@@ -32,10 +34,17 @@
             </NavLink>
         </div>
 
-        <!-- Toggle Timer Button -->
-        <div class="nav-item mt-3 d-flex justify-content-center">
-            <button class="btn btn-completed" @onclick="ToggleTimer">
-                @(showTimer ? "Hide Timer" : "Show Timer")
+        <div class="nav-item px-3">
+            <button class="nav-link stopwatch-toggle" @onclick="ToggleTimer">
+                @(showTimer ? "⏱️Hide Stopwatch" : "⏱️Show Stopwatch")
+            </button>
+
+
+        </div>
+
+        <div class="nav-item px-3">
+            <button class="nav-link stopwatch-toggle" @onclick="TogglePomodoro">
+                🍅 @(showPomodoro ? "Hide Pomodoro" : "Show Pomodoro")
             </button>
         </div>
 
@@ -43,13 +52,22 @@
         <!-- Timer UI -->
         @if (showTimer)
         {
-            <div class="d-flex flex-column align-items-center mt-3">
-                <p class="fs-4">@($"{hours:D2}:{minutes:D2}:{seconds:D2}")</p>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-completed" @onclick="StartTimer">Start</button>
-                    <button class="btn btn-completed" @onclick="StopTimer">Stop</button>
-                    <button class="btn btn-completed" @onclick="ResetTimer">Reset</button>
+            <div class="px-3 mt-3">
+                <div class="timer-box-sidebar d-flex flex-column align-items-center w-100">
+                    <p class="fs-4 mb-2">@($"{hours:D2}:{minutes:D2}:{seconds:D2}")</p>
+                    <div class="d-flex gap-2 flex-wrap justify-content-center">
+                        <button class="btn btn-timer" @onclick="StartTimer">Start</button>
+                        <button class="btn btn-timer" @onclick="StopTimer">Stop</button>
+                        <button class="btn btn-timer" @onclick="ResetTimer">Reset</button>
+                    </div>
                 </div>
+            </div>
+        }
+
+        @if (showPomodoro)
+        {
+            <div class="px-3 mt-3">
+                <PomodoroTimer />
             </div>
         }
 
@@ -99,7 +117,8 @@
             }
         }
     }
-
+    //Next steps: Add a functional timer/pomodoro section, also, see if you can make it look nicer (perhaps
+    // by having a frame around the buttons.)
     private void StopTimer()
     {
         source?.Cancel();
@@ -113,4 +132,12 @@
         hours = minutes = seconds = 0;
         StateHasChanged();
     }
+
+    private bool showPomodoro = false;
+
+    private void TogglePomodoro()
+    {
+        showPomodoro = !showPomodoro;
+    }
+
 }

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FocusNest",
   "resources": {
-    "hash": "sha256-ZfvG8hWzh0nEiwMfVO0BCYmowMeuIam7Ispl8PcIxwU=",
+    "hash": "sha256-ZXO0B1/h6XVDEqnpGz3vwEjksCiPlTZwgwyL0en02QU=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Microsoft.AspNetCore.Authorization.phaa9r44xv.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -202,8 +202,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "FocusNest.n4oii1py58.wasm": "FocusNest.wasm",
-      "FocusNest.jzhnh0gvs1.pdb": "FocusNest.pdb"
+      "FocusNest.skanbbzb60.wasm": "FocusNest.wasm",
+      "FocusNest.vrk1tuqykf.pdb": "FocusNest.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.rtblh4npr3.js": "sha256-HyBzcYNpT2l19+f1bpjNOa1oFoLe3K4JIQ6GsFK5m6I="
@@ -414,10 +414,10 @@
       "WindowsBase.u25hol0de4.wasm": "sha256-CgB28KCiYKHd4yK6IM0PJ526P7IbRCpNkGTqn+cLwxs=",
       "mscorlib.brg9pkj3je.wasm": "sha256-FzZwzxUYYyg3qxc7Km8r50UKAmRWrIeckSFG1NTHKNU=",
       "netstandard.wuzd3f1y6v.wasm": "sha256-yAXc0deBIRkWTVXqADZfhgZtrxGgJCIbZYVtA0NjvdM=",
-      "FocusNest.n4oii1py58.wasm": "sha256-Wa/4F7UrR0GIooWzUiYZbYOLx8pEhIPFjBnUUx53jjc="
+      "FocusNest.skanbbzb60.wasm": "sha256-tIOOVcrKGSS89zHZoacf9SrRMngH/7F6UATHE9pxZFM="
     },
     "pdb": {
-      "FocusNest.jzhnh0gvs1.pdb": "sha256-MdTA9/CwndG6kdOEgBO03EnTcZyex2YchDW+SvSltdA="
+      "FocusNest.vrk1tuqykf.pdb": "sha256-lUvss7W17HDu3oNaR73wtLyKl4O+YEjGOwSLMuuai54="
     }
   },
   "cacheBootResources": true,

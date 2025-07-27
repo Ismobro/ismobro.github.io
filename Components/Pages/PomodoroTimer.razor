@@ -1,0 +1,64 @@
+﻿<div class="timer-box-sidebar d-flex flex-column align-items-center w-100">
+    <p class="fs-5 mb-1">Pomodoro Timer</p>
+
+    <div class="mb-3 w-100">
+        <label for="duration" class="form-label text-white">Session Length (minutes)</label>
+        <input type="number" id="duration" class="form-control text-center"
+               min="1" max="90" @bind="SelectedMinutes" @bind:event="oninput"
+               disabled="@IsRunning" />
+    </div>
+
+    <p class="fs-4 mb-2">@TimeLeft.ToString(@"mm\:ss")</p>
+
+    <div class="d-flex gap-2 flex-wrap justify-content-center">
+        @if (!IsRunning)
+        {
+            <button class="btn btn-timer" @onclick="StartTimer">Start</button>
+        }
+        else
+        {
+            <button class="btn btn-timer" @onclick="PauseTimer">Pause</button>
+        }
+        <button class="btn btn-timer" @onclick="ResetTimer">Reset</button>
+    </div>
+</div>
+
+@code {
+    private int SelectedMinutes = 25; // User-chosen duration
+    private TimeSpan TimeLeft = TimeSpan.Zero;
+
+    private bool IsRunning = false;
+    private CancellationTokenSource? source;
+
+    private async Task StartTimer()
+    {
+        if (IsRunning) return;
+
+        TimeLeft = TimeSpan.FromMinutes(SelectedMinutes);
+        IsRunning = true;
+        source = new CancellationTokenSource();
+        var token = source.Token;
+
+        while (TimeLeft.TotalSeconds > 0 && !token.IsCancellationRequested)
+        {
+            await Task.Delay(1000, token);
+            TimeLeft = TimeLeft.Subtract(TimeSpan.FromSeconds(1));
+            InvokeAsync(StateHasChanged);
+        }
+
+        IsRunning = false;
+    }
+
+    private void PauseTimer()
+    {
+        source?.Cancel();
+        IsRunning = false;
+    }
+
+    private void ResetTimer()
+    {
+        PauseTimer();
+        TimeLeft = TimeSpan.FromMinutes(SelectedMinutes);
+    }
+}
+
