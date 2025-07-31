@@ -1,0 +1,24 @@
+## Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+*.db
+*.opendb
+*.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+*.pdb
+
+## Other
+*.cache
+*.vsix
+*.dll
+*.exe
+*.tmp
